@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+body {
+  background-color: #E8D7F7;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
+
+.card {
+  margin: auto 20px auto 20px;
+  background-color: #FFF;
+  height: 500px;
+  width: 275px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 7px 5px 0 #915CFF;
+  box-shadow: 0 2px 7px 0 #915CFF; }
+  .card .card-img {
+    margin-top: 45px; }
+  .card .card-title {
+    color: #8353E6;
+    font-weight: bold; }
+  .card .card-description {
+    color: #ABA2A8; }
+  .card .card-points {
+    margin-top: 35px; }
+    .card .card-points .point {
+      display: inline-block;
+      margin: 5px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: #8353E6; }
+      .card .card-points .point:first-child, .card .card-points .point:last-child {
+        background-color: #ABA2A8; }
+  .card:first-child {
+    margin: auto 20px auto auto; }
+  .card:last-child {
+    margin: auto auto auto 20px; }
+  .card.card-center {
+    height: 550px; }
+
+/*# sourceMappingURL=app.css.map */

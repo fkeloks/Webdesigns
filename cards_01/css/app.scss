@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+// Variables
+$white: #FBF7FE;
+$grey: #ABA2A8;
+$violet1: #E8D7F7;
+$violet2: #E7E1D0;
+$violet3: #8353E6;
+
+// Règles globales
+body {
+    background-color: $violet1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Règles spéciales
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    margin: auto 20px auto 20px;
+    background-color: #FFF;
+    height: 500px;
+    width: 275px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0 7px 5px 0 #915CFF;
+    box-shadow: 0 2px 7px 0 #915CFF;
+    .card-img { margin-top: 45px; }
+    .card-title {
+        color: $violet3;
+        font-weight: bold;
+    }
+    .card-description { color: $grey; }
+    .card-points {
+        margin-top: 35px;
+        .point {
+            display: inline-block;
+            margin: 5px;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: $violet3;
+            &:first-child, &:last-child { background-color: $grey; }
+        }
+    }
+    &:first-child { margin: auto 20px auto auto; }
+    &:last-child { margin: auto auto auto 20px; }
+    &.card-center { height: 550px; }
+}
